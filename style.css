@@ -132,7 +132,7 @@ main {
 }
 
 .btn--new {
-  top: 4rem;
+  top: 6rem;
 }
 .btn--roll {
   top: 39.3rem;
@@ -173,6 +173,75 @@ main {
 }
 
 
+/* Modal styling starts */
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: left;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#how-to-play {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Optional: Add this if you want to customize the instructions button separately */
+.btn--instructions {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+  background-color: #f8f9fa; /* light gray */
+  color: #6b6464;
+  border: 2px solid #ccc;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn--instructions:hover {
+  background-color: #e2e6ea;
+  border-color: #999;
+}
+
+
+
+
+/* Modal styling ends */
+
+
 /* Responsiveness */
 @media (max-width: 400px) {
   main {
@@ -204,7 +273,7 @@ main {
     width: 100%;
     padding: 1rem;
     font-size: 1.5rem;
-    margin-bottom: 6rem;
+    margin-bottom: 7rem;
   }
 
   .btn {
@@ -223,6 +292,17 @@ main {
   .btn--hold {
     top: 38.7rem;
   }
+
+  .btn--instructions {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    padding: 0.3rem 1.3rem;
+
+  }
+
 
   .dice {
     height: 8rem;

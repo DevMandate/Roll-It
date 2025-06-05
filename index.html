@@ -30,7 +30,26 @@
       <button class="btn btn--new">🔄 New game</button>
       <button class="btn btn--roll">🎲 Roll dice</button>
       <button class="btn btn--hold">📥 Hold</button>
+
+      <!-- Instructions Modal -->
+    <div class="modal hidden">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h2>How to Play Pig Game</h2>
+        <p>
+          - Each turn, a player rolls a die as many times as they wish. Each result is added to their current score.<br>
+          - If they roll a 1, they lose all current score and it becomes the other player's turn.<br>
+          - They can choose to "Hold" to add current score to their total score and pass the turn.<br>
+          - First player to reach 100 wins.
+        </p>
+      </div>
+    </div>
+    <!-- <a href="#" id="how-to-play">❓ How to Play</a> -->
+     <button class="btn btn--instructions" id="how-to-play">❓ How to Play</button>
     </main>
+
+    
+
     <script src="script.js"></script>
   </body>
 </html>
